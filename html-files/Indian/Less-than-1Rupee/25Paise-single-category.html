@@ -188,8 +188,7 @@
           console.log(mydata)
           document.querySelector(mydata).innerText = "Coin No : " + data[i].CoinNo
 
-                  document.querySelector("#TotalIndianCoin").innerText = "Total Foreign Coins  :  " + data.length
-                  document.querySelector("#TotalForeignCoin").innerText =  "Total Indian Coins   :  " + data.length
+          document.querySelector("#TotalThisSectionCoin").innerText = "Total Coins In This Section :  " + data.length
         }
     })
 
@@ -291,6 +290,7 @@ fetch("../../../data/Indian/25PS_Coin.json")
         <span class="glyphicon glyphicon-info-sign"></span> Information
               <div id = "TotalForeignCoin" >Total Foreign Coin : 16</div>
         <p id = "TotalIndianCoin">Total Indian Coin : 54</p>
+        <p id = "TotalThisSectionCoin">N/A</p>
         <hr class="visible-xs">
       </section>
       <section id="address" class="col-sm-4">
